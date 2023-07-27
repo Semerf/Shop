@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class GoodList {
     private Good[] goods;
-    private int count = 0;
+    private int count;
 
     public GoodList() {
         this.goods = new Good[10];
@@ -19,11 +19,7 @@ public class GoodList {
 
     @Override
     public String toString() {
-        StringBuilder result = new StringBuilder();
-        for (int i = 0; i < count; i++) {
-            result.append(goods[i]);
-        }
-        return result.toString() + '\n';
+        return "Goods:\n" + Arrays.toString(goods);
     }
 
     public Good[] getGoods() {

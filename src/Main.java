@@ -13,12 +13,12 @@ public class Main {
         User user1 = new User("user1", "password1");
         User user2 = new User("user2", "password2");
         for (int i = 0; i < 3; i++) {
-            user1.addToUserBasket(category1.getGoods()[(int) Math.round(Math.random() * 9)]);
-            user1.addToUserBasket(category2.getGoods()[(int) Math.round(Math.random() * 9)]);
-            user1.addToUserBasket(category3.getGoods()[(int) Math.round(Math.random() * 9)]);
-            user2.addToUserBasket(category1.getGoods()[(int) Math.round(Math.random() * 9)]);
-            user2.addToUserBasket(category2.getGoods()[(int) Math.round(Math.random() * 9)]);
-            user2.addToUserBasket(category3.getGoods()[(int) Math.round(Math.random() * 9)]);
+            user1.addGoodToBasket(category1.getGoods()[(int) Math.round(Math.random() * 9)]);
+            user1.addGoodToBasket(category2.getGoods()[(int) Math.round(Math.random() * 9)]);
+            user1.addGoodToBasket(category3.getGoods()[(int) Math.round(Math.random() * 9)]);
+            user2.addGoodToBasket(category1.getGoods()[(int) Math.round(Math.random() * 9)]);
+            user2.addGoodToBasket(category2.getGoods()[(int) Math.round(Math.random() * 9)]);
+            user2.addGoodToBasket(category3.getGoods()[(int) Math.round(Math.random() * 9)]);
         }
         System.out.println(user1.toString() + user2);
     }

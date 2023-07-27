@@ -1,9 +1,9 @@
 public class User {
-    private String login;
+    private final String login;
     private String password;
-    private Basket basket;
+    private final Basket basket;
 
-    public void addToUserBasket(Good good) {
+    public void addGoodToBasket(Good good) {
         basket.add(good);
     }
 
